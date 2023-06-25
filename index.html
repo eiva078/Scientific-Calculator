@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Scientific Calculator</h1>
+    </nav>
+    <div class="main">
+        <div class="container">
+            <div class="input"><input type="text" id="input"></div>
+            <div class="btnTop">
+                <button class="button btnMath" id="clear">AC</button>
+                <button class="button btnMath" onclick=pi()>&#960;</button>
+                <button class="button btnMath" onclick=e()>e</button>
+                <button class="button btnMath" onclick=inverseofx()>x<sup>-1</sup></button>
+                <button class="button btnMath" onclick=mod()>|x|</button>
+                <button class="button btnNum" >(</button>
+                <button class="button btnNum" >)</button>
+                <button class="button btnNum" onclick=percentage()>%</button>
+                <button class="button btnNum" id="back" onclick=backspace()>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace" viewBox="0 0 16 16">
+                    <path d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z"/>
+                    <path d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z"/>
+                  </svg>
+                </button>
+            </div>
+            <div>
+                <button class="button btnMath" onclick=sin()>sin</button>
+                <button class="button btnMath" onclick=sinh()>sinh</button>
+                <button class="button btnMath" onclick=cot()>cot</button>
+                <button class="button btnMath" onclick=rootofx()><sup>y</sup><i>√</i>x</button>
+                <button class="button btnMath" onclick=powofx()>x<sup>y</sup></button>
+                <button class="button btnNum" >7</button>
+                <button class="button btnNum" >8</button>
+                <button class="button btnNum" >9</button>
+                <button class="button btnNum" onclick=div()>÷</button>
+            </div>
+            <div class="third">
+                <button class="button btnMath" onclick=cos()>cos</button>
+                <button class="button btnMath" onclick=cosh()>cosh</button>
+                <button class="button btnMath" onclick=sec()>sec</button>
+                <button class="button btnMath" onclick=cuberoot()>&#8731;</button>
+                <button class="button btnMath" onclick=cube()>x&sup3;</button>
+                <button class="button btnNum" >4</button>
+                <button class="button btnNum" >5</button>
+                <button class="button btnNum" >6</button>
+                <button class="button btnNum" onclick=mul()>X</button>
+            </div>
+            <div class="fourth">
+                <button class="button btnMath" onclick=tan()>tan</button>
+                <button class="button btnMath" onclick=tanh()>tanh</button>
+                <button class="button btnMath" onclick=cosec()>cosec</button>
+                <button class="button btnMath" onclick =squareRoot()>&#8730;</button>
+                <button class="button btnMath" onclick=square()>x&sup2;</button>
+                <button class="button btnNum" >1</button>
+                <button class="button btnNum" >2</button>
+                <button class="button btnNum" >3</button>
+                <button class="button btnNum" id="btnMath">-</button>
+
+            </div>
+            <div>
+                <button class="button btnMath" onclick=log10()>log</button>
+                <button class="button btnMath" onclick=ln()>ln</button>
+                <button class="button btnMath" onclick=exp()>e<sup>x</sup></button>
+                <button class="button btnMath" onclick=powof2()>2<sup>x</sup></button>
+                <button class="button btnMath" onclick=powof10()>10<sup>x</sup></button>
+                <button class="button btnNum" >0</button>
+                <button class="button btnNum" >.</button>
+                <button class="button btnNum" id="equals">=</button>
+                <button class="button btnNum" id="btnMath">+</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &#169;</p>
+    </footer>
+    <script src="java.js"></script>
+</body>
+
+</html>
